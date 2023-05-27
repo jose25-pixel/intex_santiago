@@ -13,19 +13,19 @@
 #formulario{
 	width: 70%;
 	margin: auto;
-	border: 1px solid #fff;
+	border: 1px solid rgb(14, 13, 13);
 
-	box-shadow: 0px 0px 10px #fff;
+	box-shadow: 0px 0px 10px rgb(22, 22, 22);
 
 	border-radius: 10px;
 	overflow: hidden;
-	background-color: #c6f1f7d5;
+	background-color: #f8f8f8;
 }
 
 #formulario h1{
 	padding: 3%;
 	box-sizing: border-box;
-	background-color: #0C89AD;
+	background-color:#9cacc0;
 	text-align: center;
 	
 }

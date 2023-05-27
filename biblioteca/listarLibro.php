@@ -30,11 +30,13 @@ ORDER BY LI.CodLibro DESC;
 		table{
 			color: #000000;
 			width: 100%;
-			border: 1px solid #fff;
+			border: 1px solid #000000;
+			background-color:#f8f8f8;
+			text-align: center;;
 		}
 
 		table td{
-			border: 1px solid #fff;
+			border: 1px solid #000000;
 			text-align: center;
 		}
 
@@ -84,12 +86,12 @@ ORDER BY LI.CodLibro DESC;
 				echo "</td>";
                  
 				echo "<td>";
-				echo "<button onclick=\"imprimirCodigo('" . $fila['Codigo'] . "', '" . $fila['Titulo'] . "', " . $fila['Ejemplar'] . ");\">Imprimir</button>";
+				echo "<a onclick=\"imprimirCodigo('" . $fila['Codigo'] . "', '" . $fila['Titulo'] . "', " . $fila['Ejemplar'] . ");\"> <img src='img_l/icon-print.png' width='32' height='32'></a>";
 				echo "</td>";
 			echo "</tr>";
 		}
 		echo "</tbody></table>";
 	}else{
-		echo "No Se Encontraron resultados... en libros";
+		echo "<p style='color: #000000;'>No Se Encontraron resultados... en libros</p>";
 	}
 ?>

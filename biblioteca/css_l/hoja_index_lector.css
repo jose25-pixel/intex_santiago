@@ -247,14 +247,14 @@ ul, ol{
 #menu li a:hover {
 	cursor: pointer;
 	font-size: 18px;
-	color: #56E253;
+	color: #1511f0;
 	/* text-decoration: underline; */
 }
 
 #menu li ul li a:hover{
 	cursor: pointer;
 	font-size: 18px;
-	color: #56E253;
+	color: #603ef8;
 	/* text-decoration: underline; */
 
 }

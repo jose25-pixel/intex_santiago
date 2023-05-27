@@ -20,8 +20,9 @@ body
 .conenedorcard{
     margin-top: 0px;
     padding: 0px;
+
     justify-content: space-between;
-    background-color: rgb(12, 12, 12);
+    background-color: #d7d6d3;
     width: 100%;
     
 }

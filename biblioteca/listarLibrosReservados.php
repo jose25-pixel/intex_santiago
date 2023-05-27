@@ -41,20 +41,23 @@ ORDER BY RE.CodReserva DESC
 		echo "<style type='text/css'>
 
 		table{
-			color: #0e0d0d;
+			color:#000000;
 			width: 100%;
-			border: 1px solid #fff;
+			border: 1px solid #000000;
+			background-color:#f8f8f8;
+			text-align: center;
+
 		}
 
 		table td{
-			border: 1px solid #fff;
+			border: 1px solid #000000;
 			text-align: center;
 		}
 
 		table td a{
 			margin: 4px;
 			display: block;
-			background: #e2e2e2;
+			background:blue;
 			padding: 5px;
 			box-sizing: border-box;
 			border-radius: 5px;
@@ -87,7 +90,7 @@ ORDER BY RE.CodReserva DESC
 				echo "<td>" .$fila['Fecha Limite'] ."</td>";
 				echo "<td>" .$fila['Estado'] ."</td>";
 				echo "<td>";
-				echo "<a style='cursor:pointer' onclick ='VRetornarLibroReservado(" .$fila['Codigo'] .");'>Cancelar</a>";
+				echo "<a style='cursor:pointer'  onclick ='VRetornarLibroReservado(" .$fila['Codigo'] .");'>Cancelar</a>";
 				echo "</td>";
 			echo "</tr>";
 		}
@@ -96,7 +99,7 @@ ORDER BY RE.CodReserva DESC
 
 
 	}else{
-		echo "No Se Encontraron resultados...";
+		echo "<p style='color: #000000;'>No Se Encontraron resultados...</p>";
 	}
 
 

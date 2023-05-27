@@ -51,7 +51,7 @@
 
 			<div id="caja1">
 				<fieldset>
-					<legend>Lista de Editoriales</legend>
+					<legend class="text-dark">Lista de Editoriales</legend>
 					<div id="listEditoriales">
 						
 					</div>
@@ -64,7 +64,7 @@
 
 					<form id="FormAgregarEditorial">
 						<input type="text" id="txtEditorial" placeholder="Nueva Editorial" required>
-						<button class="btn btn-primary bi-file-plus" type="button" onclick="GuardarEditorial();"> Agregar Editorial</button>
+						<button class="btn btn-success bi-person-add" type="button" onclick="GuardarEditorial();"> Agregar Editorial</button>
 					</form>
 
 				</div>
@@ -80,7 +80,7 @@
 							<input type="text" id="txtcodEditorialMod" placeholder="Codigo de Editorial" required>
 							<input type="text" id="txtEditorialMod" placeholder="Cambiar Editorial por..." required>
 						
-							<button class="btn btn-warning bi-pencil-square" type="button" onclick="ModificarEditorial();"> Modificar Editorial</button>
+							<button class="btn btn-primary bi-pencil-square" type="button" onclick="ModificarEditorial();"> Modificar Editorial</button>
 					</form>
 
 				</div>

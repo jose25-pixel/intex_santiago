@@ -35,6 +35,9 @@
 		</script>
 
 		<script>
+		
+
+
 
 			//funcion para imprimir los libros segun buscador
 document.getElementById("btnImprimir").addEventListener("click", function () {
@@ -63,12 +66,13 @@ document.getElementById("btnImprimir").addEventListener("click", function () {
 
 
 <script>
+	
 //funcion para imprimir Viñetas
 function imprimirCodigo(Codigo, Titulo, numEjemplares) {
   var contenido = "";
 
   for (var i = 1; i <= numEjemplares; i++) {
-    contenido += "<div style='font-size: 50px; display: inline-block; padding: 15px;'>" + Codigo + "</div>";
+    contenido += "<div style='font-size: 16px; display: inline-block; padding: 15px;'>" + Codigo + "</div>";
 
     // Realizar un salto de página después de cada 40 ejemplares
     if (i % 40 === 0) {

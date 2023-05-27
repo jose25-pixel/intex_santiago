@@ -50,7 +50,7 @@
 			<h1>Opciones de Genero</h1>
 
 			<div id="caja1">
-				<fieldset>
+				<fieldset class="text-dark">
 					<legend>Lista de Generos</legend>
 					<div id="listGenero">
 						
@@ -64,7 +64,7 @@
 
 					<form id="FormAgregarGenero">
 						<input type="text" id="txtGenero" placeholder="Nuevo Genero" required>
-						<button  class="btn btn-primary bi-file-plus" type="button" onclick=" GuardarGenero();"> Agregar Género</button>
+						<button  class="btn btn-success bi-person-add" type="button" onclick=" GuardarGenero();"> Agregar Género</button>
 					</form>
 
 				</div>
@@ -80,7 +80,7 @@
 							<input type="text" id="txtcodGeneroMod" placeholder="Codigo de Genero" required>
 							<input type="text" id="txtGeneroMod" placeholder="Cambiar Género por..." required>
 						
-						<button class="btn btn-warning bi-pencil-square" type="button" onclick="ModificarGenero();"> Modificar Género</button>
+						<button class="btn btn-primary bi-pencil-square" type="button" onclick="ModificarGenero();"> Modificar Género</button>
 					</form>
 
 				</div>

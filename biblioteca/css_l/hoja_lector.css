@@ -34,8 +34,8 @@ body{
 
 #tablaLe h1{
 	text-align: center;
-	background-color: #0C89AD;
-	color: #fff;
+	background-color:#e2e2e2;
+	color: rgb(8, 8, 8);
 	padding: 4px;
 	box-sizing: border-box;
 }
@@ -47,7 +47,7 @@ body{
 
 	padding: 0.5%;
 	box-sizing: border-box;
-	background-color: #C6F1F7;
+	background-color:#9cacc0;
 	text-align: right;
 
 }

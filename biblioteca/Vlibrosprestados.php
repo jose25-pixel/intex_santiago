@@ -52,16 +52,16 @@
 
 			<div id="tablaLP">
 				
-				<h1>Libros Prestados</h1>
+				<h1>Libros Prestados admin</h1>
 				<div id="busqueda">
 
 					<div id="NuevoLP">
-					<button onclick="imprSelec('ListaLP');">Imprimir</button>
+					<button class="btn btn-primary text-white" onclick="imprSelec('ListaLP');">Imprimir</button>
 					</div>	
 
 					<div id="BusquedaLP">
 					<input type="text" id= "txtbusqueda" name="" placeholder="Nro Carnet Lector">
-					<button type="button" onclick="ListarLibrosPrestados();">Buscar</button>
+					<button type="button" id="" class="btn btn-primary  bi-search" onclick="ListarLibrosPrestados();">Buscar</button>
 					
 					</div>
 

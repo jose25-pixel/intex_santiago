@@ -32,7 +32,8 @@
 
 			<div id="DatosLibro">
 				<?php
-				echo "<img height='100' width='100' src='data:image/jpg;base64," .base64_encode($fila['Portada']) ."'/>";
+				echo "<td><img height='100' width='100' src='" . $fila['Portada'] . "'/></td>";
+
 				echo "<br>";
 				echo "$Titulo";
 				?>
@@ -47,7 +48,7 @@
 			<p>¿Desea el Eliminar del Registro este Libro?</p>
 			<div>
 				<button type="button" onclick="DEliminarLi(<?php echo $dcodLi; ?>);">Aceptar</button>
-				<button type="button" onclick="VistaLibro();">Cancelar</button>
+				<button style="background-color:red" type="button" onclick="VistaLibro();">Cancelar</button>
 			</div>
 		</div>
 

@@ -22,11 +22,13 @@ include('../dbconexion.php');
 		table{
 			color: #000000;
 			width: 100%;
-			border: 1px solid #fff;
+			text-align: center;
+			border: 1px solid #000000;
+			background-color:#f8f8f8;
 		}
 
 		table td{
-			border: 1px solid #fff;
+			border: 1px solid #000000;
 			text-align: center;
 		}
 
@@ -83,7 +85,7 @@ include('../dbconexion.php');
 
 
 	}else{
-		echo "No Se Encontraron resultados...";
+		echo "<p style='color: #000000;'>No Se Encontraron resultados...</p>";
 	}
 
 

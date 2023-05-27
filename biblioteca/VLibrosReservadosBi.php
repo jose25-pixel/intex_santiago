@@ -24,8 +24,6 @@
 			$("#ListaLRSBi").html(datos);
 			}
 			});
-
-
 			})
 
 
@@ -52,7 +50,7 @@
 
 			<div id="tablaLRSBi">
 				
-				<h1>Libros Reservados</h1>
+				<h1>Libros Reservados admin</h1>
 				<div id="busqueda">
 
 					<div id="NuevoLRSBi">

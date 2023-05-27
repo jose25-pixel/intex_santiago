@@ -42,20 +42,22 @@ ORDER BY RE.CodReserva DESC
 		echo "<style type='text/css'>
 
 		table{
-			color: #fff;
+			color: #000000;
 			width: 100%;
-			border: 1px solid #fff;
+			border: 1px solid #000000;
+			background:#f8f8f8;
+			text-align: center;
 		}
 
 		table td{
-			border: 1px solid #fff;
+			border: 1px solid #000000;
 			text-align: center;
 		}
 
 		table td a{
 			margin: 4px;
 			display: block;
-			background: #ff0000;
+			background:#ff0000;
 			padding: 5px;
 			box-sizing: border-box;
 			border-radius: 5px;
@@ -123,7 +125,7 @@ ORDER BY RE.CodReserva DESC
 
 
 	}else{
-		echo "No Se Encontraron resultados...";
+		echo "<p style='color: #000000;'>No Se Encontraron resultados... de la busqueda</p>";
 	}
 
 

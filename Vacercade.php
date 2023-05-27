@@ -60,8 +60,7 @@
 					información por parte de la comunidad del Instituto, que provea a los-as estudiantes el
 					 soporte que le permita realizar sus investigaciones, estimule y fomente la excelencia en la
 					 enseñanza y sirva al fortalecimiento de los planes de estudio.
-					</p></p>
-
+					</p>
 			</div>
 
 

@@ -79,7 +79,7 @@ document.getElementById("btnImprimirlector").addEventListener("click", function 
 
 					<div id="NuevoLe">
 					<button class="btn btn-success bi-plus" onclick="VNuevoLe();"> Agregar Nuevo</button>
-					<button class="btn btn-warning bi-printer" id="btnImprimirlector">Imprimir</button>
+					<button class="btn btn-primary bi-printer" id="btnImprimirlector">Imprimir</button>
 					</div>	
 
 					<div id="BusquedaLe">

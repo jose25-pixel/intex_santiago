@@ -11,13 +11,18 @@ body{
 #contenidoAcerca{
 	padding: 2%;
 	box-sizing: border-box;
+	text-align: center;
+	
 }
 
 #CajaDato{
 	padding: 1%;
 	box-sizing: border-box;
 	border: 2px solid #E8E8E8;
+	background-color:#d7d6d3;
 	border-radius: 5px;
+	
+
 }
 
 
@@ -34,20 +39,22 @@ h2{
 	width: 40%;
 	padding: 1%;
 	box-sizing: border-box;
-	background-color: #0C89AD;
+	background-color: #9cacc0;
 	border-radius: 0px 10px 0px 0px;
 	border-top: 2px solid #E8E8E8;
 	border-right: 2px solid #E8E8E8;
 	border-left: 2px solid #E8E8E8;
+	
 }
 
 #politica p{
-	width: 90%;
+	width: 100%;
 	padding: 1%;
 	box-sizing: border-box;
+	border:  2px solid #E8E8E8;
+	background-color: #f8f8f8 ;
+	text-align: center;
 
-
-	border:  2px solid #E8E8E8
 	
 }
 
@@ -61,7 +68,7 @@ h2{
 	width: 40%;
 	padding: 1%;
 	box-sizing: border-box;
-	background-color: #0C89AD;
+	background-color: #9cacc0;
 	border-radius: 0px 10px 0px 0px;
 	border-top: 2px solid #E8E8E8;
 	border-right: 2px solid #E8E8E8;
@@ -70,12 +77,13 @@ h2{
 
 #objetivos p{
 	
-	width: 90%;
+	width: 100%;
 	padding: 1%;
 	box-sizing: border-box;
+	background-color: #f8f8f8 ;
+	text-align: center;
 
-
-	border:  2px solid #E8E8E8
+	border:  2px solid #E8E8E8;
 }
 
 
@@ -87,7 +95,7 @@ h2{
 	width: 40%;
 	padding: 1%;
 	box-sizing: border-box;
-	background-color: #0C89AD;
+	background-color: #9cacc0;
 	border-radius: 0px 10px 0px 0px;
 	border-top: 2px solid #E8E8E8;
 	border-right: 2px solid #E8E8E8;
@@ -95,10 +103,10 @@ h2{
 }
 
 #mision p, #vision p{
-	width: 90%;
+	width: 100%;
 	padding: 1%;
 	box-sizing: border-box;
-
-
-	border:  2px solid #E8E8E8
+	background-color: #f8f8f8 ;
+	text-align: center;
+	border: 2px solid #E8E8E8;
 }

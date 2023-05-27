@@ -20,11 +20,12 @@ include('../dbconexion.php');
 		table{
 			color: #000000;
 			width: 100%;
+			text-align: center;
 			border: 1px solid #fff;
 		}
 
 		table td{
-			border: 1px solid #fff;
+			border: 1px solid #000000;
 			text-align: center;
 		}
 

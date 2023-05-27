@@ -36,32 +36,32 @@
 			
 			<div>
 			<label for="txtnombres">Nombres:</label>
-			<input type="text" required id="txtnombres" value="" >
+			<input type="text" required id="txtnombres" value="" placeholder="Monica" >
 			</div>
 
 			<div>
 			<label for="txtapellidos">Apellidos:</label>
-			<input type="text" required id="txtapellidos" value="" >	  
+			<input type="text" required id="txtapellidos" value="" placeholder="Lopez" >	  
 			
 			</div>
 
 			<div>
 			<label for="txtdireccion">Dirección:</label>
-			<input type="text" required id="txtdireccion" value="" >	
+			<input type="text" required id="txtdireccion" value="" placeholder=" Barrio el calvario" >	
 			</div>
 
 			<div>
 			<label for="txtemail">Email:</label>
-			<input type="text" required id="txtemail" value="" >	
+			<input type="text" required id="txtemail" value=""  placeholder="monicalopez@gmail.com">	
 			</div>
 			<div>
 			<label for="txttelefono">Telefono:</label>
-			<input type="number" required id="txttelefono" value="" pattern=".{9,}" maxlength="9" min="1" >	
+			<input type="number" required id="txttelefono" value="" placeholder="67564534" pattern=".{9,}" maxlength="9" min="1" >	
 			</div>
 
 			<div>
 			<label for="txtseccion">Seccion:</label>
-			<input type="text" required id="txtseccion" value="" >	
+			<input type="text" required id="txtseccion" value="" placeholder="Sección "B" >	
 			</div>
 
 			<div>
@@ -78,7 +78,7 @@
 		
 			<div>
 			<label for="txtc">N_carnet:</label>
-			<input type="text" required id="txtc" value="">    
+			<input type="text" required id="txtc" placeholder="nt345678" value="">    
 			</div>		
 		
 			<div>

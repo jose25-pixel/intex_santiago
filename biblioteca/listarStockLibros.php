@@ -33,6 +33,8 @@ ORDER BY LI.CodLibro DESC;
 			color: #000;
 			width: 100%;
 			border: 1px solid #000;
+			background-color:#f8f8f8; 
+			text-align: center;
 
 		}
 
@@ -40,6 +42,8 @@ ORDER BY LI.CodLibro DESC;
 			border: 1px solid #000;
 			text-align: center;
 			font-size: 10pt;
+
+			 
 		}
 
 		</style>

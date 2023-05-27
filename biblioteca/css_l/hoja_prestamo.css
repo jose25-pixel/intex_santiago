@@ -26,7 +26,7 @@
 	overflow: hidden;
 	padding: 2%;
 	box-sizing: border-box;
-	background-color: #e2e2e2 ;
+	background-color: #f8f8f8;
 	border-radius: 10px;
 	font-size:medium;
 	
@@ -34,12 +34,12 @@
 
 #ContDatos h1{
 	margin: 0px;
-	padding: 10px;
+	padding: 6px;
 	box-sizing: border-box;
 	text-align: center;
-	background-color: #9cacc0;
-	margin-bottom: 2%;
-	color: #fff;
+	background-color: #9cacc0 ;
+	margin-bottom: 1%;
+	color: rgb(19, 18, 18);
 }
 
 #ContDatos form div{
@@ -94,10 +94,11 @@
 	border:1px solid black;
 	float: right;
 	width: 55%;
+	height: 490px;
 	overflow: hidden;
 	padding: 2%;
 	box-sizing: border-box;
-	background-color: #e2e2e2;
+	background-color: #d7d6d3;
 	border-radius: 10px;
 	color: #fff;
 	font-size:medium;
@@ -105,12 +106,12 @@
 
 #ContListLibros h1{
 	margin: 0px;
-	padding: 10px;
+	padding: 6px;
 	box-sizing: border-box;
 	text-align: center;
-	background-color: #9cacc0 ;
+	background-color: #9cacc0;
 	margin-bottom: 2%;
-	color: #fff;
+	color: rgb(20, 20, 20);
 }
 
 
@@ -155,7 +156,7 @@
 	border:1px solid black;
 
 	width: 100%;
-	max-height: 230px;
+	max-height: 340px;
 	overflow: auto;
 
 }

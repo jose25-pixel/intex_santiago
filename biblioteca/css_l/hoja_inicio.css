@@ -25,7 +25,7 @@
 	margin: auto;
 	padding: 5px;
 
-	background-color: #0C89AD;
+	background-color:;
 	
 }
 
@@ -49,9 +49,9 @@
 
 	display: inline-block;
 
-	border:1px solid #fff;
+	border:1px solid rgb(51, 50, 50);
 
-	
+	background-color:#f8f8f8;
 	text-align: center;
 	
 }
@@ -59,7 +59,7 @@
 
 #article1 img, #article2 img{
 	padding: 2%;
-	background-color: #86d5eb;
+	background-color:#f8f8f8;
 	border-radius: 5px;
 
 }

@@ -34,9 +34,10 @@ ORDER BY LI.CodLibro DESC;
 
 		echo "<style type='text/css'>
 		table{
-			color: #161515;
+			color: #000000;
 			width: 100%;
-			border: 1px solid #fff;
+			border: 1px solid #000000;
+			background-color: #f8f8f8;
 		}
 		table td{
 			padding: 1%;
@@ -54,8 +55,8 @@ ORDER BY LI.CodLibro DESC;
 		";
 		while ($fila = mysqli_fetch_array($resultado)) {
 			echo "<tr>";
-
-				echo "<td><img height='200' width='200' src='data:image/jpg;base64," .base64_encode($fila['Portada']) ."'/></td>";
+			echo "<td><img height='200' width='200' src='./biblioteca/".$fila['Portada'] . "'/></td>";
+			
 
 				echo "<td>
 					<strong><p style='color:green;'>Titulo: </p></strong>" .$fila['Titulo'] ."

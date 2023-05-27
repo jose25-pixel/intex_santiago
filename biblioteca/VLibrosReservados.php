@@ -58,7 +58,7 @@
 
 			<div id="tablaLRS">
 				
-				<h1>Libros Reservados</h1>
+				<h1>Libros Reservados </h1>
 				<div id="busqueda">
 
 					<div id="NuevoLRS">

@@ -51,7 +51,7 @@
 
 			<div id="caja1">
 				<fieldset>
-					<legend>Lista de Autores</legend>
+					<legend class="text-dark">Lista de Autores</legend>
 					<div id="listAutores">
 						
 					</div>
@@ -64,7 +64,7 @@
 
 					<form id="FormAgregarAutor">
 						<input type="text" name="txtautor" id="txtautor" placeholder="Nuevo Autor" required>
-						<button class="btn btn-primary bi-person-add" type="button" onclick="GuardarAutor();"> Agregar Autor</button>
+						<button class="btn btn-success bi-person-add" type="button" onclick="GuardarAutor();"> Agregar Autor</button>
 					</form>
 
 				</div>
@@ -80,7 +80,7 @@
 							<input type="text" id="txtcodautorMod" placeholder="Codigo de Autor" required>
 							<input type="text" id="txtautorMod" placeholder="Cambiar Nombre por..." required>
 						
-						<button class="btn btn-warning bi-pencil-square" type="button" onclick="ModificarAutor();"> Modificar Autor</button>
+						<button class="btn btn-primary bi-pencil-square" type="button" onclick="ModificarAutor();"> Modificar Autor</button>
 					</form>
 
 				</div>

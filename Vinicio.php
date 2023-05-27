@@ -58,8 +58,8 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-
-	        <div class="conenedorcard row mt-4">
+                <div class=" ">  
+	        <div class=" row mt-3">
 
 			<div class="card col-sm-12 col-md-4">
 					<img src="./img/bd.jpg" class="card-img-top" alt="...">
@@ -67,6 +67,14 @@
 						<h5 class="card-title text-dark">Beneficios de Leer</h5>
 						<p class="card-text text-dark">La lectura aumenta la capacidad de las personas para concentrarse, favorece las conexiones neuronales y, si se realiza con frecuencia, es un ejercicio muy útil para evitar la pérdida de algunas funciones cognitivas. Leer mantiene activa la mente y esto, según estudios científicos, incrementa 
 							la rapidez de respuesta de las personas dado que la lectura entrena al cerebro para ordenar ideas.</p>
+					</div>
+				</div>
+
+
+				<div  style="background-color:#d7d6d3;" class=" col-sm-12 col-md-4">
+					
+					<div class="card-body text-center">
+						
 					</div>
 				</div>
 				
@@ -81,4 +89,5 @@
 					</div>
 				</div>
 	       	</div>
+</div>
 </div>

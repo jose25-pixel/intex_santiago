@@ -36,43 +36,43 @@
 			
 			<div>
 			<label for="txtnombres">Nombres:</label>
-			<input type="text" required id="txtnombres" value="" >
+			<input type="text" required id="txtnombres" value="" placeholder="Juan" >
 			</div>
 
 			<div>
 			<label for="txtapellidos">Apellidos:</label>
-			<input type="text" required id="txtapellidos" value="" >	
+			<input type="text" required id="txtapellidos" placeholder="Pérez" value="" >	
 			</div>
 
 
 			<div>
 			<label for="txtcargo">Cargo:</label>
-			<input type="text" required id="txtcargo" value="" >	
+			<input type="text" required id="txtcargo" value="" placeholder="Docente">	
 			</div>
 
 			<div>
 			<label for="txtdireccion">Dirección:</label>
-			<input type="text" required id="txtdireccion" value="" >	
+			<input type="text" required id="txtdireccion" value="" placeholder="Calle el calvario Santiago Texacuangos" >	
 			</div>
 
 			<div>
 			<label for="txtemail">Email:</label>
-			<input type="text" required id="txtemail" value="" >	
+			<input type="text" required id="txtemail" value="" placeholder="juanperez@gmail.con" >	
 			</div>
 
 			<div>
 			<label for="txttelefono">Telefono:</label>
-			<input type="number" required id="txttelefono" value="" pattern=".{9,}" maxlength="9" >	
+			<input type="number" required id="txttelefono" value="" pattern=".{9,}" maxlength="9" placeholder="78567845" >	
 			</div>
 
 			<div>
 			<label for="txtdni">DNI:</label>
-			<input type="text" required id="txtdni" value="" pattern=".{8,}" maxlength="8">	
+			<input type="text" required id="txtdni" value="" pattern=".{8,}" maxlength="8" placeholder="mn234567">	
 			</div>
 
 			<div>
 			<label for="txtnroCarnet">Nro Carnet:</label>
-			<input type="text" required id="txtnroCarne" value="" >	
+			<input type="text" required id="txtnroCarne" value="" placeholder="mh1234">	
 			</div>
 		
 

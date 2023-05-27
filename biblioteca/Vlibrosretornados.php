@@ -65,7 +65,7 @@
 
 
 					<div id="ImprimirLR">
-					<button onclick="imprSelec('ListaLR');">Imprimir</button>
+					<button class="btn btn-info text-white" onclick="imprSelec('ListaLR');">Imprimir</button>
 					</div>	
 
 					<div id="BusquedaLR">

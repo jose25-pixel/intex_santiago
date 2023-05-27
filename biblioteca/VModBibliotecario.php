@@ -82,8 +82,8 @@
 			
 
 			<div id= 'botones'>
-				<button type="button" onclick="DModificarBi();">Aceptar Cambios</button>
-				<button type="button" onclick="VistaBibliotecario();">Cancelar Cambios</button>
+				<button type="button" class="btn btn-primary" onclick="DModificarBi();">Aceptar Cambios</button>
+				<button type="button" class="btn btn-danger" onclick="VistaBibliotecario();">Cancelar Cambios</button>
 			</div>
 			</form>
 		</div>

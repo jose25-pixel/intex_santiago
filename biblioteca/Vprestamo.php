@@ -136,7 +136,7 @@ $FechaMaxima = date ( 'Y-m-d' , $nuevafechaYear );
 			<div id="busqueda">
 								
 				<input type="text" id="txtbusqueda" placeholder="Titulo,Autor,Editorial,Genero">
-				<button class="btn btn-warning bi-search" type="button" onclick="ListarStockLibro();"> Buscar</button>
+				<button class="btn btn-primary  bi-search" type="button" onclick="ListarStockLibro();"> Buscar</button>
 							
 			
 			</div>

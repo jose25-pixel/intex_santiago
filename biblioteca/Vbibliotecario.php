@@ -61,8 +61,8 @@
 					</div>	
 
 					<div id="BusquedaBi">
-					<input type="text" id= "txtbusqueda" name="">
-					<button class="btn btn-primary bi-search" type="button" onclick="ListarBibliotecario();"> Buscar</button>
+					<input type="text" id= "txtbusqueda" name="" placeholder="Nombre Apellidos Nu_carnet">
+					<button class="btn btn-primary bi-search" type="button"   onclick="ListarBibliotecario();"> Buscar</button>
 					</div>
 
 
@@ -73,7 +73,7 @@
 					
 				</div>
 
-				<p id="Nrobibliotecario"><?php echo "Cantidad de bibliotecarios: " .$Nrobiblios; ?></p>
+				<p id="Nrobibliotecario" class="text-dark"><?php echo "Cantidad de bibliotecarios: " .$Nrobiblios; ?></p>
 			</div>
 
 

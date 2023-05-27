@@ -44,14 +44,16 @@ $CarnetLector = $_POST['dbusqueda'];
 
 			color: #000000;
 			width: 100%;
-			border: 1px solid #fff;
+			border: 1px solid #000000;
+			background-color:#f8f8f8;
+			text-align: center;
 		}
 		table tr{
 			padding: 5px;
 			box-sizing: border-box;
 		}
 		table td{
-			border: 1px solid #fff;
+			border: 1px solid #000000;
 			text-align: center;
 			
 		}

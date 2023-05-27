@@ -29,9 +29,8 @@ $("#FormNuevoLibro").on("submit", function(e){
 		processData: false
 	}).done(function(datos){
 		$("#ContenidoLi").html(datos);
-
 		// Obtener los datos del último registro insertado
-		$.ajax({
+	/*	$.ajax({
   url: "ultimoRegistro.php",
   type: "GET",
   dataType: "HTML"
@@ -46,7 +45,7 @@ $("#FormNuevoLibro").on("submit", function(e){
   ventanaImpresion.focus();
   ventanaImpresion.print();
 
-});
+});*/
 	});
 });
 
@@ -59,16 +58,16 @@ $("#FormNuevoLibro").on("submit", function(e){
 			<form enctype="multipart/form-data"   id="FormNuevoLibro" method="POST">
 				<div>
 				<label for="txttitulo">Titulo:</label>
-				<input type="text" required id="txttitulo" name="txttitulo">
+				<input type="text" required id="txttitulo" name="txttitulo" placeholder="Cuentos de barro">
 				</div>
 
 				<div>
 				<label for="txtcodigo">Dewey:</label>
-				<input type="text" required id="txtcodigo" name="txtcodigo">
+				<input type="text" required id="txtcodigo" name="txtcodigo" placeholder="800.890">
 				</div>
 				<div>
 					<label for="picimagen">Portada:</label>
-					<input type="file" required id="picimagen" type="" name="picimagen">
+					<input style="color:black" type="file" required id="picimagen" type="" name="picimagen">
 				</div>
 				<div>
 				<label for="cboautor">Autor:</label>
@@ -108,30 +107,30 @@ $("#FormNuevoLibro").on("submit", function(e){
 				</div>
 				<div>
 				<label for="txtubicacion">Ubicacion:</label>
-				<input type="text" required id="txtubicacion" name="txtubicacion" >	
+				<input type="text" required id="txtubicacion" name="txtubicacion" placeholder="Estante "1-A" >	
 				</div>
                  
 				<div>
 				<label for="txtano_edicion">Año_edición:</label>
-				<input type="text" required id="txtano_edicion" value="" name="txtano_edicion" min="1">
+				<input type="text" required id="txtano_edicion" value="" name="txtano_edicion" min="1" placeholder="1956">
 				</div>	
 
 
 				<div>
 				<label for="txtpaginas">Paginas:</label>
-				<input type="number" required id="txtpaginas" value="" name="txtpaginas" min="1">
+				<input type="number" required id="txtpaginas" value="" name="txtpaginas" min="1" placeholder="400">
 				</div>	
 
 
 				<div>
 				<label for="txtejemplar">Ejemplares:</label>
-				<input type="number" required id="txtejemplar" value="" name="txtejemplar" min="1">
+				<input type="number" required id="txtejemplar" value="" name="txtejemplar" min="1" placeholder="30">
 				</div>	
 
 
 				<div>
 				<label for="txtdescripcion">Descripcion:</label>
-				<input type="text" required id="txtdescripcion" value="" name="txtdescripcion" min="1">
+				<input type="text" required id="txtdescripcion" value="" name="txtdescripcion" min="1" placeholder="Mitologia Cuscatleca">
 				</div>					
 				
 

@@ -119,26 +119,7 @@
 		</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<header>
-			
-
 			<div id="titulo">
 				<!--<h1>Sistema de Biblioteca</h1>-->
 				<h3><?php echo $texto;?></h3>
@@ -166,8 +147,6 @@
 					</ul>
 				</li>
 
-				<!--<li><a onclick="VistaLibro();">Libros</a></li>-->
-				<!--<li><a onclick="VistaLector();">Mi Cuenta</a></li>-->
 				<li><a class="bi-power" href="../index.php"> Salir</a></li>
 			</ul>
 
