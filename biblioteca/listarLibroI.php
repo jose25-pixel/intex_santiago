@@ -16,7 +16,7 @@ echo "<h1> Instituto Nacional de Santiago Texacuangos</h1>";
 
 // Logotipo
 
-echo '<div id="logo"><img src="./img_l/Intex.png" alt="Logo de la Biblioteca" width="160" height="100" ></div>';
+echo '<img  width="160" height="100" src="./img_l/bimg6.jpg" alt="Logo de la Biblioteca" >';
 
 
 $query= "

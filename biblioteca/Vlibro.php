@@ -53,7 +53,7 @@ document.getElementById("btnImprimir").addEventListener("click", function () {
             // Crear una ventana de impresión
             var ventimp = window.open('', 'popimpr');
             // Agregar el título y el logotipo al contenido de impresión
-            var contenidoConEncabezado = "<h1>Reporte de Libros de la Biblioteca</h1><img src='ruta_del_logo.png' alt='Logo de la Biblioteca'>" + contenido;
+            var contenidoConEncabezado = "<h1>Reporte de Libros de lddvdva Biblioteca</h1>" + contenido;
             ventimp.document.write(contenidoConEncabezado);
             ventimp.document.close();
             ventimp.print();
