@@ -4,7 +4,7 @@
 	$dcodLe = $_POST['vcod'];
 
 
-	$query= "SELECT * FROM Lector wHERE CodLector = '$dcodLe'";
+	$query= "SELECT * FROM lector wHERE CodLector = '$dcodLe'";
 
 	$resultado = $cnmysql->query($query);
 

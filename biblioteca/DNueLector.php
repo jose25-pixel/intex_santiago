@@ -17,7 +17,7 @@ if (!empty($dnombres) && !empty($dapellidos) && !empty($ddireccion)	&& !empty($d
 	) 
 {
 	$query = "  
-	INSERT INTO Lector(
+	INSERT INTO lector(
 	Nombres,
 	Apellidos,
 	Direccion,

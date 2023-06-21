@@ -5,15 +5,30 @@
 	<script type="text/javascript">
 		
 
-			function imprSelec(nombre) {
-			  var ficha = document.getElementById(nombre);//obtenemos el objeto a imprimir
-			  var ventimp = window.open(' ', 'popimpr'); //abrimos una ventana vacía nueva
-			  ventimp.document.write( ficha.innerHTML ); //imprimimos el HTML del objeto en la nueva ventana
-			  ventimp.document.close(); //cerramos el documento
-			  ventimp.print( ); //imprimimos la ventana
-			  ventimp.close(); //cerramos la ventana
-
-			}
+		document.getElementById("btnImprimirpres").addEventListener("click", function () {
+    // Llamar al archivo PHP que genera el contenido de impresión
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "listarlibrosprestadoLectImprimir.php", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var contenido = xhr.responseText;
+            // Crear una ventana de impresión
+            var ventimp = window.open('', 'popimpr');
+            // Agregar el título y el logotipo al contenido de impresión
+            var contenidoConEncabezado =  "<h2>Reporte de tus libros prestados de la Biblioteca</h2>" +
+                    '<img id="logo" src="./img_l/logo.jpg" alt="Logo de la Biblioteca" width="160" height="100">'  + contenido;
+                    ventimp.document.write('<style>#logo { position: absolute; top: 0; right: 0; }</style>');
+            ventimp.document.write(contenidoConEncabezado);
+            ventimp.document.close();
+            ventimp.document.getElementById("logo").onload = function() {
+                // Imprimir después de que la imagen se haya cargado
+                ventimp.print();
+                ventimp.close();
+            };
+        }
+    };
+    xhr.send();
+});
 	</script>
 	
 
@@ -64,7 +79,7 @@
 
 
 					<div id="ImprimirLPL">
-					<button onclick="imprSelec('ListaLPL');"> Imprimir</button>
+					<button class="btn btn-danger bi-printer" id="btnImprimirpres">Imprimir</button>
 					</div>	
 
 					<!--<div id="BusquedaLR">

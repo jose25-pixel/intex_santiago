@@ -2,9 +2,11 @@
 <?php
 include('../dbconexion.php');
 
-	$vbusqueda = $_POST["dbusqueda"];
-/*	session_start();
-	$codLector = $_SESSION["idl"];*/
+// Título del reporte
+echo "<h2> Instituto Nacional de Santiago Texacuangos</h2>";
+
+
+$busqueda = $_GET['busqueda'];
 
 	$query= "
 
@@ -15,9 +17,9 @@ INNER JOIN libros LI ON LI.CodLibro = RE.CodLibro
 INNER JOIN estado ES ON ES.CodEstado = RE.CodEstado
 WHERE
 (
-LI.Titulo LIKE '$vbusqueda%'
+LI.Titulo LIKE '$busqueda%'
 OR
-LE.Nro_Carnet LIKE '$vbusqueda%')
+LE.Nro_Carnet LIKE '$busqueda%')
 AND
 (ES.CodEstado = 1)
 ORDER BY RE.CodReserva DESC
@@ -83,7 +85,7 @@ ORDER BY RE.CodReserva DESC
 						<th>Fecha de Reserva</th>
 						<th>Fecha Limite</th>
 						<th>Estado</th>
-						<th colspan= '2'>Operaciones</th>
+					
 					</tr>
 				</theader>
 				<tbody>
@@ -97,16 +99,7 @@ ORDER BY RE.CodReserva DESC
 				echo "<td>" .$fila['Fecha Limite'] ."</td>";
 				echo "<td>" .$fila['Estado'] ."</td>";
 
-				echo "<td>";
-				echo "<a id='pasar' style='cursor:pointer' onclick ='VPrestamoPorReserva(" .$fila['Codigo'] .");'>Registrar</a>";
-				echo "</td>";
-				echo "<td>";
-
-
-
-				echo "<a style='cursor:pointer' onclick ='VRetornarLibroReservadoBi(" .$fila['Codigo'] .");'>Cancelar</a>";
-				echo "</td>";
-
+		
 
 
 

@@ -54,11 +54,16 @@ document.getElementById("btnImprimirlector").addEventListener("click", function 
             // Crear una ventana de impresión
             var ventimp = window.open('', 'popimpr');
             // Agregar el título y el logotipo al contenido de impresión
-            var contenidoConEncabezado = "<h1>Reporte de Estudiantes de la Biblioteca</h1><img src='ruta_del_logo.png' alt='Logo de la Biblioteca'>" + contenido;
+            var contenidoConEncabezado = "<h1>Reporte de Libros de la Biblioteca</h1>" +
+                    '<img id="logo" src="./img_l/logo.jpg" alt="Logo de la Biblioteca" width="160" height="100">'  + contenido;
+					ventimp.document.write('<style>#logo { position: absolute; top: 0; right: 0; }</style>');
             ventimp.document.write(contenidoConEncabezado);
             ventimp.document.close();
-            ventimp.print();
-            ventimp.close();
+			ventimp.document.getElementById("logo").onload = function() {
+                // Imprimir después de que la imagen se haya cargado
+                ventimp.print();
+                ventimp.close();
+            };
         }
     };
     xhr.send();

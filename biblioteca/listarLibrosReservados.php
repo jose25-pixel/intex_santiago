@@ -1,21 +1,11 @@
 
 <?php
-
-
 include('../dbconexion.php');
 
 	$vbusqueda = $_POST["dbusqueda"];
 	session_start();
 	$codLector = $_SESSION["idl"];
-
-
-
-
-
-
 	$query= "
-
-
 SELECT RE.CodReserva AS Codigo, LE.CodLector AS Lector, LI.Titulo AS Titulo, RE.Fec_Reserva AS 'Fecha Reserva',DATE_ADD(RE.Fec_reserva, INTERVAL 1 DAY) AS 'Fecha Limite', ES.Descripcion AS Estado
 FROM reservas RE 
 INNER JOIN lector LE ON LE.CodLector = RE.CodLector
@@ -27,10 +17,7 @@ AND
 LE.CodLector = '$codLector'
 AND
 ES.CodEstado = 1
-ORDER BY RE.CodReserva DESC
-
-
- ";
+ORDER BY RE.CodReserva DESC";
 
 	$resultado = $cnmysql->query($query);
 

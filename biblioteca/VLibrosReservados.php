@@ -28,27 +28,45 @@
 
 			})
 
-
-			function imprSelec(nombre) {
-  var ficha = document.getElementById(nombre); // obtenemos el objeto a imprimir
-  var contenido = ficha.innerHTML;
-
-  // Eliminar el botón "Retornar" del contenido
-  var contenidoSinBoton = contenido.replace(/<a[^>]*>Cancelar<\/a>/g, '');
-
-  // Eliminar la fila con el título "Operaciones" del contenido
-  var contenidoSinTitulo = contenidoSinBoton.replace(/<th>Operaciones<\/th>/g, '');
-
-  var ventimp = window.open('', 'popimpr'); // abrimos una ventana vacía nueva
-  ventimp.document.write(contenidoSinTitulo); // imprimimos el contenido sin el botón ni el título en la nueva ventana
-  ventimp.document.close(); // cerramos el documento
-  ventimp.print(); // imprimimos la ventana
-  ventimp.close(); // cerramos la ventana
-}
+	
 
 
 </script>
 
+<script>
+		
+
+
+
+		//funcion para imprimir los libros segun buscador
+document.getElementById("btnimprimirRes").addEventListener("click", function () {
+// Obtener el valor de búsqueda
+var busqueda = document.getElementById("txtbusqueda").value;
+
+// Llamar al archivo PHP que genera el contenido de impresión
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "listarLibrosReservadosImprimir.php?busqueda=" + encodeURIComponent(busqueda), true);
+xhr.onreadystatechange = function () {
+	if (xhr.readyState === 4 && xhr.status === 200) {
+		var contenido = xhr.responseText;
+		// Crear una ventana de impresión
+		var ventimp = window.open('', 'popimpr');
+		// Agregar el título y el logotipo al contenido de impresión
+		var contenidoConEncabezado =  "<h2>Reporte de tus libros reservados de la Biblioteca</h2>" +
+				'<img id="logo" src="./img_l/logo.jpg" alt="Logo de la Biblioteca" width="160" height="100">'  + contenido;
+				ventimp.document.write('<style>#logo { position: absolute; top: 0; right: 0; }</style>');
+		ventimp.document.write(contenidoConEncabezado);
+		ventimp.document.close();
+		ventimp.document.getElementById("logo").onload = function() {
+			// Imprimir después de que la imagen se haya cargado
+			ventimp.print();
+			ventimp.close();
+		};
+	}
+};
+xhr.send();
+});
+	</script>
 
 	<div id="ContenidoLRS">
 		
@@ -58,11 +76,11 @@
 
 			<div id="tablaLRS">
 				
-				<h1>Libros Reservados </h1>
+				<h1>Libros Reservados nuevos </h1>
 				<div id="busqueda">
 
 					<div id="NuevoLRS">
-					<button onclick="imprSelec('ListaLRS');">Imprimir</button>
+					<button class="btn btn-danger bi-printer" id="btnimprimirRes">Imprimir</button>
 					</div>	
 
 					<div id="BusquedaLRS">

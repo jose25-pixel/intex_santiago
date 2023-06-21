@@ -1,0 +1,95 @@
+<?php
+include('../dbconexion.php');
+
+// Título del reporte
+echo "<h2> Instituto Nacional de Santiago Texacuangos</h2>";
+
+
+$busqueda = $_GET['busqueda'];
+	$query= "
+	SELECT DP.Cod_Det_Prestamo AS 'CodDp', LI.Titulo AS 'Titulo del Libro',LE.Nro_Carnet, CONCAT(LE.Nombres,' ',LE.Apellidos) AS 'Lector', PR.Fec_Entrega AS 'Fecha Entrega',PR.Fec_Devolucion AS 'Fecha de Devolución', ES.Descripcion AS 'Estado'
+	FROM detalle_prestamo DP
+	INNER JOIN libros LI on LI.CodLibro = DP.CodLibro
+	INNER JOIN prestamo PR on PR.CodPrestamo = DP.CodPrestamo
+	INNER JOIN lector LE on LE.CodLector = PR.CodLector
+	INNER JOIN estado ES on ES.CodEstado = DP.CodEstado
+	WHERE
+	(LI.Titulo LIKE '$busqueda%' OR
+	LE.Nro_Carnet LIKE '$busqueda%' OR
+	LE.Nombres LIKE '$busqueda%' OR
+	LE.Apellidos LIKE '$busqueda%')
+	AND (ES.CodEstado = 1)
+	ORDER BY DP.Cod_Det_Prestamo DESC;
+ ";
+	$resultado = $cnmysql->query($query);
+	$num_filas = mysqli_num_rows($resultado);
+	if ($num_filas > 0) {
+		echo "<style type='text/css'>
+		table{
+			color: #000000;
+			width: 100%;
+			border: 1px solid #000000;
+			background-color: #f8f8f8;
+			text-align: center;
+		}
+
+		table td{
+			border: 1px solid #000000;
+			text-align: center;
+		}
+
+		table td a{
+			margin: 4px;
+			display: block;
+			background: #7a9de9;
+			padding: 5px;
+			box-sizing: border-box;
+			border-radius: 5px;
+	
+		}
+
+		table td a:hover{
+			text-decoration: underline;
+		}
+		</style>
+		";	
+		echo "   
+			<table>
+				<theader>
+					<tr>
+						<th>Titulo del Libro</th>
+						<th>Lector</th>
+						<th>Fecha Entrega</th>
+						<th>Fecha de Devolución</th>
+						<th>Estado</th>
+						
+					</tr>
+				</theader>
+				<tbody>
+		";
+		while ($fila = mysqli_fetch_array($resultado)) {
+			echo "<tr>";
+				echo "<td>" .$fila['Titulo del Libro'] ."</td>";
+				echo "<td>" .$fila['Lector'] ."</td>";
+				echo "<td>" .$fila['Fecha Entrega'] ."</td>";
+				echo "<td>" .$fila['Fecha de Devolución'] ."</td>";
+				echo "<td>" .$fila['Estado'] ."</td>";
+
+
+				
+
+
+
+
+			echo "</tr>";
+		}
+
+		echo "</tbody></table>";
+
+
+	}else{
+		echo "<p style='color: #000000;'>No Se Encontraron resultados...</p>";
+	}
+
+
+?>
